@@ -6,15 +6,25 @@
  * Time: 13:15
  */
 
-use  app\widgets\LeftMenu\LeftMenu;
+use app\widgets\LeftMenu\LeftMenu;
+
 echo LeftMenu::widget([
 ]);
 
 ?>
+<div id='content'>
+    <div class="well"><button class="save">Добавить пользователя</button></div>
 <table class="table table-striped">
-    <th>�����</th>  <th>�.�.�</th>
-    <?php foreach($model as $user)
-{ ?>
-    <tr><td><?=$user['login']?></td><td><?=$user['fio']?></td></tr>
+
+    <thead>
+    <th>Логин</th>
+    <th>Ф.И.О</th>
+    </thead>
+    <?php foreach ($model as $user) { ?>
+        <tr>
+            <td><?= $user['login'] ?></td>
+            <td><?= $user['fio'] ?></td>
+        </tr>
     <?php } ?>
 </table>
+</div>

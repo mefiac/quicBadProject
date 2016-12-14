@@ -16,9 +16,7 @@ echo LeftMenu::widget([
         <div class='table_head'>
             <div class="form_input">
                 <div class="input_group add_project">
-                    <div class="input_img forsave">
-                        <i class="fa fa-plus"></i>
-                    </div>
+
                     <a href='/banner/add' class='save'>Добавить баннер</a>
                 </div>
             </div>
